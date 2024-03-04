@@ -10,3 +10,9 @@ El gateway es el punto de comunicación entre nuestros clientes y nuestros servi
 4. Tener levantados los microservicios que se van a consumir
 5. Levantar proyecto con `npm run start:dev`
 
+
+
+## Nats
+```
+docker run -d --name nats-server -p 4222:4222 -p 8222:8222 nats
+```
