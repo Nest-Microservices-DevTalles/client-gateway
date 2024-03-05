@@ -20,6 +20,7 @@ async function bootstrap() {
   app.useGlobalFilters(new RpcCustomExceptionFilter())
 
 
+  console.log('Prueba de sub-módulo');
 
   await app.listen(envs.port);
 
