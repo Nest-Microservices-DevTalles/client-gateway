@@ -21,7 +21,7 @@ async function bootstrap() {
 
   await app.listen(envs.port);
 
-  console.log('Hola Mundo - Segundo Cambio');
+  console.log('Google Cloud Triggered!');
 
   logger.log(`Gateway running on port ${envs.port}`);
 }
