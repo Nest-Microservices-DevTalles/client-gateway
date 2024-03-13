@@ -20,8 +20,6 @@ WORKDIR /usr/src/app
 # Copiar los módulos de node de la imagen deps
 COPY --from=deps /usr/src/app/node_modules ./node_modules
 
-# Copy the .env file
-COPY .env.prod ./
 
 # Copiar el resto de los archivos
 COPY . .
