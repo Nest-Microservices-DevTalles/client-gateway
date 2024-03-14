@@ -25,7 +25,7 @@ async function bootstrap() {
 
   await app.listen(envs.port);
 
-  console.log('Usando K8s - HealthCheck');
+  console.log('Usando K8s - HealthCheck - Google CI/CD');
 
   logger.log(`Gateway running on port ${envs.port}`);
 }
