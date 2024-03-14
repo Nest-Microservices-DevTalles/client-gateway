@@ -7,7 +7,7 @@ steps:
         "us-central1-docker.pkg.dev/fourth-epigram-417016/client-gateway/production",
         "-f",
         "dockerfile.prod",
-        "--platform=linux/arm64",
+        "--platform=linux/amd64",
         ".",
       ]
   - name: "gcr.io/cloud-builders/docker"
