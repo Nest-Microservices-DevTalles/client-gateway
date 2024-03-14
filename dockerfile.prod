@@ -38,7 +38,7 @@ FROM node:21-alpine3.19 as prod
 WORKDIR /usr/src/app
 
 # Copiar los módulos de node de la imagen deps
-COPY --from=deps /usr/src/app/node_modules ./node_modules
+COPY --from=build /usr/src/app/node_modules ./node_modules
 
 # Copiar la carpeta dist
 COPY --from=build /usr/src/app/dist ./dist
@@ -50,7 +50,7 @@ USER node
 
 EXPOSE 3000
 
-# Start the server using the production build
+# Start the server using the production build 
 CMD ["node", "dist/main.js"]
 
 
